@@ -1,0 +1,18 @@
+/* ----- F53 Theme -----
+  Reduces lines
+  Uses colors from current favorite discord theme.
+  Makes some elements less bright
+/* Forgotten Keep Colors */
+.sk-client-theme--dark {
+  --sk_primary_background: 24,24,24;
+  --p-channel_sidebar__column-bg: #1d1d1d;
+}
+/* less lines pls thanks */
+* { box-shadow: none!important; }
+.p-channel_sidebar__pages_list_spacer, .p-ia__sidebar_header__button, .c-wysiwyg_container--theme_dark_bordered
+{ border-color: transparent!important; }
+/* Make New Message Button Less Bright and Vibrant */
+.p-channel_sidebar__compose_button {
+  color: #D1D2D3;
+  background: none!important;
+}

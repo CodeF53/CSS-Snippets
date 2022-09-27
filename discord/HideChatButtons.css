@@ -1,0 +1,6 @@
+/* ----- Hide Chat Buttons -----
+  Hides Useless Buttons In The Chat Box */
+button[aria-label="Send a gift"],
+button[aria-label="Open GIF picker"],
+button[aria-label="Open sticker picker"]
+{ display: none; }

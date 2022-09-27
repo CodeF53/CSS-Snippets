@@ -1,0 +1,9 @@
+/* ----- Anti Self Doxx -----
+  Hides All Potentially Sensitive info.
+  For SlackMod videos/screenshots */
+.c-avatar img, .p-top_nav__search__text,
+.p-ia__sidebar_header__team_name_text,
+div:nth-child(11)>button>.c-menu_item__label {
+  display:none;
+  color:transparent;
+}

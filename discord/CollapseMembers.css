@@ -1,0 +1,31 @@
+/* ----- Collapse Members -----
+  Makes member list only the width of PFPs until you hover over it
+  Once you hover over it, it expands to normal width smoothly */
+[class*="membersWrap-"] [class*="membersGroup-"] {
+  margin-right: auto;
+  width: 57px;
+  text-overflow: clip;
+  direction: rtl;
+  word-spacing: 1000px;
+}
+[class*="membersWrap-"]:hover [class*="membersGroup-"],
+[class*="membersWrap-"]:focus-within [class*="membersGroup-"] {
+  width: 100%;
+  margin: 0;
+  direction: ltr;
+  word-spacing: unset;
+  text-overflow: ellipsis;
+}
+.membersWrap-3NUR2t{
+min-width: 0 !important;
+}
+.members-3WRCEx {
+transition: 250ms ease all;
+width: 64px !important;
+}
+.members-3WRCEx:hover {
+width: 64px !important;
+}
+.membersWrap-3NUR2t:hover .members-3WRCEx{
+width: 245px !important;
+}
