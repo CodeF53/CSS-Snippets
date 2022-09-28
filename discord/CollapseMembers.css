@@ -17,15 +17,15 @@
   text-overflow: ellipsis;
 }
 .membersWrap-3NUR2t{
-min-width: 0 !important;
+  min-width: 0 !important;
 }
 .members-3WRCEx {
-transition: 250ms ease all;
-width: 64px !important;
+  transition: 250ms ease all;
+  width: 64px !important;
 }
 .members-3WRCEx:hover {
-width: 64px !important;
+  width: 64px !important;
 }
 .membersWrap-3NUR2t:hover .members-3WRCEx{
-width: 245px !important;
+  width: 245px !important;
 }
