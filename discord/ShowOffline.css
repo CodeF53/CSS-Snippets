@@ -1,0 +1,19 @@
+/* Show Discord, even when you're offline */
+.container-2RRFHK {
+  background: transparent;
+  pointer-events: none;
+}
+.container-2RRFHK * {
+  display: none;
+}
+.container-2RRFHK::before {
+  content: 'You\'ve gone offline';
+  display: block;
+  bottom: 24px;
+  right: 24px;
+  position: absolute;
+  padding: 8px 16px;
+  background-color: #f04747;
+  border-radius: 4px;
+  color: #fff;
+}
