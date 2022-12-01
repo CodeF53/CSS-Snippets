@@ -4,3 +4,8 @@ button[aria-label="Send a gift"],
 button[aria-label="Open GIF picker"],
 button[aria-label="Open sticker picker"]
 { display: none; }
+
+/* no sticker suggestions */
+[class*="stickerIconOffset"] {
+	display: none;
+}
