@@ -1,4 +1,5 @@
-/* user popout revert attempt */
+/* ----- Revert User Popouts -----
+  attempts to revert user popouts to before the nitro customization change */
 [class*="userPopoutOuter"][class*="userProfileOuter"] {
 	background: var(--background-floating);
 
