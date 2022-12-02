@@ -2,7 +2,7 @@
   attempts to revert user popouts to before the nitro customization change
   some user profiles have the theme-light class, so LightModeOverride.css is needed for those
 */
-[class*="userPopoutOuter"][class*="userProfileOuter"] {
+[class*="userPopoutOuter"], [class*="userProfileOuter"] {
 	background: var(--background-floating);
 
   /* set all custom profile variables to their defaults */
