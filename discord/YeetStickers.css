@@ -7,7 +7,7 @@ button[aria-label="Open sticker picker"] { display: none; }
 #sticker-picker-tab { display: none; }
 /* replace sent stickers with "A sticker was hidden" */
 [class*="clickableSticker"] > div > [class*="assetWrapper"] {
-	display: none;
+  display: none;
 }
 [class*="clickableSticker"]::after {
   content: "A sticker was hidden.";
@@ -22,10 +22,10 @@ button[aria-label="Open sticker picker"] { display: none; }
 
 /* hide "Wave to username" in dms */
 [aria-label="Sticker, Wave, Wumpus waves hello"] ~ button {
-	display: none;
+  display: none;
 }
 
 /* no sticker suggestions */
 [class*="stickerIconOffset"] {
-	display: none;
+  display: none;
 }
