@@ -29,3 +29,6 @@ button[aria-label="Open sticker picker"] { display: none; }
 [class*="stickerIconOffset"] {
   display: none;
 }
+[class^=channelTextArea] > [class^=container] > :is([class^=stickerResults], [class^=stickerResults] ~ div) {
+  display: none;
+}
