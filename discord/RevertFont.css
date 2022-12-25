@@ -1,3 +1,12 @@
+[class^=socialLinks] + [class^=info]::after {
+  text-transform: lowercase;
+  color: var(--text-danger);
+  content: "f53.dev RevertFont will break, use https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/source.min.css instead";
+  user-select: all;
+  font-size: 10px;
+  line-height: 16px;
+}
+
 /* ----- Revert Font -----
   goes back to old font */
 @font-face{
