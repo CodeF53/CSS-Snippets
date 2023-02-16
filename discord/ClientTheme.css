@@ -1,0 +1,63 @@
+/* ----- Client Theme -----
+  does my absolute best at recreating what the old Client Theme Experiment looked like
+  Get the HSL color values of your old Client Theme Experiment Colors and set the --theme-h --theme-s and --theme-l variables in your Custom CSS accordingly */
+:root {
+  --theme-h: 0;
+  --theme-s: 0%;
+  --theme-l: 11%;
+
+  --primary-dark-600-hsl: var(--theme-h) var(--theme-s) var(--theme-l);
+  --primary-light-600-hsl: calc(var(--theme-h)) calc(var(--theme-s)) calc(var(--theme-l));
+
+  --primary-dark-100-hsl: calc(var(--theme-h) + 20) calc(var(--theme-s) - 1.8%) calc(var(--theme-l) + 83.8%);
+  --primary-dark-130-hsl: calc(var(--theme-h) - 40) calc(var(--theme-s) - 2.3%) calc(var(--theme-l) + 80.9%);
+  --primary-dark-160-hsl: calc(var(--theme-h) - 20) calc(var(--theme-s) - 1.8%) calc(var(--theme-l) + 67.4%);
+  --primary-dark-200-hsl: calc(var(--theme-h) - 10) calc(var(--theme-s) - 1.8%) calc(var(--theme-l) + 63.8%);
+  --primary-dark-230-hsl: calc(var(--theme-h) - 10) calc(var(--theme-s) - 2.6%) calc(var(--theme-l) + 57.6%);
+  --primary-dark-260-hsl: calc(var(--theme-h) - 10) calc(var(--theme-s) - 2.1%) calc(var(--theme-l) + 51.3%);
+  --primary-dark-300-hsl: calc(var(--theme-h) - 4) calc(var(--theme-s) - 2.2%) calc(var(--theme-l) + 42.2%);
+  --primary-dark-330-hsl: calc(var(--theme-h) - 30.7) calc(var(--theme-s) - 2.3%) calc(var(--theme-l) + 34.2%);
+  --primary-dark-345-hsl: calc(var(--theme-h) - 17.1) calc(var(--theme-s) - 2%) calc(var(--theme-l) + 29.1%);
+  --primary-dark-360-hsl: calc(var(--theme-h) - 26.7) calc(var(--theme-s) - 2.4%) calc(var(--theme-l) + 26.4%);
+  --primary-dark-400-hsl: calc(var(--theme-h) - 16.8) calc(var(--theme-s) - 2.6%) calc(var(--theme-l) + 15.8%);
+  --primary-dark-430-hsl: calc(var(--theme-h) - 27.3) calc(var(--theme-s) - 2.9%) calc(var(--theme-l) + 11.8%);
+  --primary-dark-460-hsl: calc(var(--theme-h) - 20) calc(var(--theme-s) - 3.4%) calc(var(--theme-l) + 7.7%);
+  --primary-dark-500-hsl: calc(var(--theme-h) - 11.4) calc(var(--theme-s) - 4.1%) calc(var(--theme-l) + 2.4%);
+  --primary-dark-530-hsl: calc(var(--theme-h) - 10.2) calc(var(--theme-s) - 4.2%) calc(var(--theme-l) - 0.5%);
+  --primary-dark-560-hsl: calc(var(--theme-h) - 19.8) calc(var(--theme-s) - 4.4%) calc(var(--theme-l) - 2.9%);
+  --primary-dark-630-hsl: calc(var(--theme-h) - 19.8) calc(var(--theme-s) - 1.9%) calc(var(--theme-l) - 3.1%);
+  --primary-dark-660-hsl: calc(var(--theme-h) - 30) calc(var(--theme-s) - 1.8%) calc(var(--theme-l) - 11.3%);
+  --primary-dark-700-hsl: calc(var(--theme-h) - 16.6) calc(var(--theme-s) - 2.2%) calc(var(--theme-l) - 9.4%);
+  --primary-dark-730-hsl: calc(var(--theme-h) + 5) calc(var(--theme-s) - 3.1%) calc(var(--theme-l) - 10.3%);
+  --primary-dark-760-hsl: calc(var(--theme-h) - 4) calc(var(--theme-s) - 1.1%) calc(var(--theme-l) - 11.3%);
+  --primary-dark-800-hsl: calc(var(--theme-h) - 9) calc(var(--theme-s) - 3.3%) calc(var(--theme-l) - 12.9%);
+  --primary-dark-830-hsl: calc(var(--theme-h) - 14) calc(var(--theme-s) - 3.3%) calc(var(--theme-l) - 15.5%);
+  --primary-dark-860-hsl: calc(var(--theme-h) - 20) calc(var(--theme-s) - 3.3%) calc(var(--theme-l) - 17.0%);
+  --primary-dark-900-hsl: calc(var(--theme-h) + 240) calc(var(--theme-s) - 4.4%) calc(var(--theme-l) - 21.1%);
+
+  --primary-light-100-hsl: calc(var(--theme-h) + 40) calc(var(--theme-s) + 2.3%) calc(var(--theme-l) + 62.7%);
+  --primary-light-130-hsl: calc(var(--theme-h) - 40) calc(var(--theme-s) + 3.4%) calc(var(--theme-l) + 61.2%);
+  --primary-light-160-hsl: calc(var(--theme-h) - 25) calc(var(--theme-s) + 1.4%) calc(var(--theme-l) + 58.6%);
+  --primary-light-200-hsl: calc(var(--theme-h) - 25) calc(var(--theme-s) + 1.1%) calc(var(--theme-l) + 55.7%);
+  --primary-light-230-hsl: calc(var(--theme-h) - 25) calc(var(--theme-s) + 0.4%) calc(var(--theme-l) + 52.8%);
+  --primary-light-260-hsl: calc(var(--theme-h) - 25) calc(var(--theme-s) + 0.1%) calc(var(--theme-l) + 49.6%);
+  --primary-light-300-hsl: calc(var(--theme-h) - 25) calc(var(--theme-s) + 0.1%) calc(var(--theme-l) + 45.7%);
+  --primary-light-330-hsl: calc(var(--theme-h) - 18.7) calc(var(--theme-s) - 0.1%) calc(var(--theme-l) + 39.8%);
+  --primary-light-345-hsl: calc(var(--theme-h) - 10.7) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 36.1%);
+  --primary-light-360-hsl: calc(var(--theme-h) - 7.9) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 33.9%);
+  --primary-light-400-hsl: calc(var(--theme-h) - 2.7) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 26.1%);
+  --primary-light-430-hsl: calc(var(--theme-h) - 8.3) calc(var(--theme-s) - 0.3%) calc(var(--theme-l) + 22.2%);
+  --primary-light-460-hsl: calc(var(--theme-h) - 2.4) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 19%);
+  --primary-light-500-hsl: calc(var(--theme-h) - 1.7) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 15.1%);
+  --primary-light-530-hsl: calc(var(--theme-h) - 2.6) calc(var(--theme-s) + 0.3%) calc(var(--theme-l) + 10.6%);
+  --primary-light-560-hsl: calc(var(--theme-h) - 5.3) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 5.5%);
+  --primary-light-630-hsl: calc(var(--theme-h) - 3.3) calc(var(--theme-s) - 0.1%) calc(var(--theme-l) + 5.3%);
+  --primary-light-660-hsl: calc(var(--theme-h) + 1.9) calc(var(--theme-s) + 0.1%) calc(var(--theme-l) - 8.2%);
+  --primary-light-700-hsl: calc(var(--theme-h) - 5.3) calc(var(--theme-s) + 0.1%) calc(var(--theme-l) - 14.3%);
+  --primary-light-730-hsl: calc(var(--theme-h) + 0.7) calc(var(--theme-s) + 0.7%) calc(var(--theme-l) - 15.5%);
+  --primary-light-760-hsl: calc(var(--theme-h) - 2.6) calc(var(--theme-s) + 0.4%) calc(var(--theme-l) - 16.8%);
+  --primary-light-800-hsl: calc(var(--theme-h) - 1.6) calc(var(--theme-s) - 0.6%) calc(var(--theme-l) - 19.2%);
+  --primary-light-830-hsl: calc(var(--theme-h) + 0.7) calc(var(--theme-s) - 1.2%) calc(var(--theme-l) - 22.7%);
+  --primary-light-860-hsl: calc(var(--theme-h) - 5.3) calc(var(--theme-s) + 0.8%) calc(var(--theme-l) - 26.8%);
+  --primary-light-900-hsl: calc(var(--theme-h) + 240) calc(var(--theme-s) + 2.0%) calc(var(--theme-l) - 31.8%);
+}
