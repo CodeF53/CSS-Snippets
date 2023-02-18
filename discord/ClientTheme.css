@@ -10,7 +10,7 @@
 ==/UserStyle== */
 
 /* default values so the entire client doesn't melt */
-:root {
+:where(:root) {
   --theme-h: 0;
   --theme-s: 0%;
   --theme-l: 11%;
