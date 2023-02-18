@@ -12,7 +12,7 @@
 :root.theme-dark {
   --primary-600-hsl: var(--theme-h) var(--theme-s) var(--theme-l);
 
-  --primary-100-hsl: calc(var(--theme-h) + 20) calc(var(--theme-s) - 1.8%) calc(var(--theme-l) + 83.8%);
+  /* --primary-100-hsl: calc(var(--theme-h) + 20) calc(var(--theme-s) - 1.8%) calc(var(--theme-l) + 83.8%);
   --primary-130-hsl: calc(var(--theme-h) - 40) calc(var(--theme-s) - 2.3%) calc(var(--theme-l) + 80.9%);
   --primary-160-hsl: calc(var(--theme-h) - 20) calc(var(--theme-s) - 1.8%) calc(var(--theme-l) + 67.4%);
   --primary-200-hsl: calc(var(--theme-h) - 10) calc(var(--theme-s) - 1.8%) calc(var(--theme-l) + 63.8%);
@@ -25,7 +25,7 @@
   --primary-400-hsl: calc(var(--theme-h) - 16.8) calc(var(--theme-s) - 2.6%) calc(var(--theme-l) + 15.8%);
   --primary-430-hsl: calc(var(--theme-h) - 27.3) calc(var(--theme-s) - 2.9%) calc(var(--theme-l) + 11.8%);
   --primary-460-hsl: calc(var(--theme-h) - 20) calc(var(--theme-s) - 3.4%) calc(var(--theme-l) + 7.7%);
-  --primary-500-hsl: calc(var(--theme-h) - 11.4) calc(var(--theme-s) - 4.1%) calc(var(--theme-l) + 2.4%);
+  --primary-500-hsl: calc(var(--theme-h) - 11.4) calc(var(--theme-s) - 4.1%) calc(var(--theme-l) + 2.4%); */
   --primary-530-hsl: calc(var(--theme-h) - 10.2) calc(var(--theme-s) - 4.2%) calc(var(--theme-l) - 0.5%);
   --primary-560-hsl: calc(var(--theme-h) - 19.8) calc(var(--theme-s) - 4.4%) calc(var(--theme-l) - 2.9%);
   --primary-630-hsl: calc(var(--theme-h) - 19.8) calc(var(--theme-s) - 1.9%) calc(var(--theme-l) - 3.1%);
@@ -41,7 +41,7 @@
 :root.theme-light {
   --primary-600-hsl: calc(var(--theme-h)) calc(var(--theme-s)) calc(var(--theme-l));
 
-  --primary-100-hsl: calc(var(--theme-h) + 40) calc(var(--theme-s) + 2.3%) calc(var(--theme-l) + 62.7%);
+  /* --primary-100-hsl: calc(var(--theme-h) + 40) calc(var(--theme-s) + 2.3%) calc(var(--theme-l) + 62.7%);
   --primary-130-hsl: calc(var(--theme-h) - 40) calc(var(--theme-s) + 3.4%) calc(var(--theme-l) + 61.2%);
   --primary-160-hsl: calc(var(--theme-h) - 25) calc(var(--theme-s) + 1.4%) calc(var(--theme-l) + 58.6%);
   --primary-200-hsl: calc(var(--theme-h) - 25) calc(var(--theme-s) + 1.1%) calc(var(--theme-l) + 55.7%);
@@ -54,7 +54,7 @@
   --primary-400-hsl: calc(var(--theme-h) - 2.7) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 26.1%);
   --primary-430-hsl: calc(var(--theme-h) - 8.3) calc(var(--theme-s) - 0.3%) calc(var(--theme-l) + 22.2%);
   --primary-460-hsl: calc(var(--theme-h) - 2.4) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 19%);
-  --primary-500-hsl: calc(var(--theme-h) - 1.7) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 15.1%);
+  --primary-500-hsl: calc(var(--theme-h) - 1.7) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 15.1%); */
   --primary-530-hsl: calc(var(--theme-h) - 2.6) calc(var(--theme-s) + 0.3%) calc(var(--theme-l) + 10.6%);
   --primary-560-hsl: calc(var(--theme-h) - 5.3) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 5.5%);
   --primary-630-hsl: calc(var(--theme-h) - 3.3) calc(var(--theme-s) - 0.1%) calc(var(--theme-l) + 5.3%);
