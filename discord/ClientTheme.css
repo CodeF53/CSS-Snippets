@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Discord Client Themes Recreation
 @namespace      f53
-@version        1.2.1
+@version        1.2.3
 @description    Recreation of treatment 1 of the client themes Discord experiment
 @author         F53
 @var            number theme-h "Hue (0-360)" [0, 0, 360]
@@ -19,58 +19,30 @@
 :root.theme-dark {
   --primary-600-hsl: var(--theme-h) var(--theme-s) var(--theme-l);
 
-  /* --primary-100-hsl: calc(var(--theme-h) + 20) calc(var(--theme-s) - 1.8%) calc(var(--theme-l) + 83.8%);
-  --primary-130-hsl: calc(var(--theme-h) - 40) calc(var(--theme-s) - 2.3%) calc(var(--theme-l) + 80.9%);
-  --primary-160-hsl: calc(var(--theme-h) - 20) calc(var(--theme-s) - 1.8%) calc(var(--theme-l) + 67.4%);
-  --primary-200-hsl: calc(var(--theme-h) - 10) calc(var(--theme-s) - 1.8%) calc(var(--theme-l) + 63.8%);
-  --primary-230-hsl: calc(var(--theme-h) - 10) calc(var(--theme-s) - 2.6%) calc(var(--theme-l) + 57.6%);
-  --primary-260-hsl: calc(var(--theme-h) - 10) calc(var(--theme-s) - 2.1%) calc(var(--theme-l) + 51.3%);
-  --primary-300-hsl: calc(var(--theme-h) - 4) calc(var(--theme-s) - 2.2%) calc(var(--theme-l) + 42.2%);
-  --primary-330-hsl: calc(var(--theme-h) - 30.7) calc(var(--theme-s) - 2.3%) calc(var(--theme-l) + 34.2%);
-  --primary-345-hsl: calc(var(--theme-h) - 17.1) calc(var(--theme-s) - 2%) calc(var(--theme-l) + 29.1%);
-  --primary-360-hsl: calc(var(--theme-h) - 26.7) calc(var(--theme-s) - 2.4%) calc(var(--theme-l) + 26.4%);
-  --primary-400-hsl: calc(var(--theme-h) - 16.8) calc(var(--theme-s) - 2.6%) calc(var(--theme-l) + 15.8%);
-  --primary-430-hsl: calc(var(--theme-h) - 27.3) calc(var(--theme-s) - 2.9%) calc(var(--theme-l) + 11.8%);
-  --primary-460-hsl: calc(var(--theme-h) - 20) calc(var(--theme-s) - 3.4%) calc(var(--theme-l) + 7.7%);
-  --primary-500-hsl: calc(var(--theme-h) - 11.4) calc(var(--theme-s) - 4.1%) calc(var(--theme-l) + 2.4%); */
-  --primary-530-hsl: calc(var(--theme-h) - 10.2) calc(var(--theme-s) - 4.2%) calc(var(--theme-l) - 0.5%);
-  --primary-560-hsl: calc(var(--theme-h) - 19.8) calc(var(--theme-s) - 4.4%) calc(var(--theme-l) - 2.9%);
-  --primary-630-hsl: calc(var(--theme-h) - 19.8) calc(var(--theme-s) - 1.9%) calc(var(--theme-l) - 3.1%);
-  --primary-660-hsl: calc(var(--theme-h) - 30) calc(var(--theme-s) - 1.8%) calc(var(--theme-l) - 11.3%);
-  --primary-700-hsl: calc(var(--theme-h) - 16.6) calc(var(--theme-s) - 2.2%) calc(var(--theme-l) - 9.4%);
-  --primary-730-hsl: calc(var(--theme-h) + 5) calc(var(--theme-s) - 3.1%) calc(var(--theme-l) - 10.3%);
-  --primary-760-hsl: calc(var(--theme-h) - 4) calc(var(--theme-s) - 1.1%) calc(var(--theme-l) - 11.3%);
-  --primary-800-hsl: calc(var(--theme-h) - 9) calc(var(--theme-s) - 3.3%) calc(var(--theme-l) - 12.9%);
-  --primary-830-hsl: calc(var(--theme-h) - 14) calc(var(--theme-s) - 3.3%) calc(var(--theme-l) - 15.5%);
-  --primary-860-hsl: calc(var(--theme-h) - 20) calc(var(--theme-s) - 3.3%) calc(var(--theme-l) - 17.0%);
-  --primary-900-hsl: calc(var(--theme-h) + 240) calc(var(--theme-s) - 4.4%) calc(var(--theme-l) - 21.1%);
+  --primary-530-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 0.5%);
+  --primary-560-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 2.9%);
+  --primary-630-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 3.1%);
+  --primary-660-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 11.3%);
+  --primary-700-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 9.4%);
+  --primary-730-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 10.3%);
+  --primary-760-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 11.3%);
+  --primary-800-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 12.9%);
+  --primary-830-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 15.5%);
+  --primary-860-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 17.0%);
+  --primary-900-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 21.1%);
 }
 :root.theme-light {
-  --primary-600-hsl: calc(var(--theme-h)) calc(var(--theme-s)) calc(var(--theme-l));
+  --primary-600-hsl: var(--theme-h) var(--theme-s) var(--theme-l);
 
-  /* --primary-100-hsl: calc(var(--theme-h) + 40) calc(var(--theme-s) + 2.3%) calc(var(--theme-l) + 62.7%);
-  --primary-130-hsl: calc(var(--theme-h) - 40) calc(var(--theme-s) + 3.4%) calc(var(--theme-l) + 61.2%);
-  --primary-160-hsl: calc(var(--theme-h) - 25) calc(var(--theme-s) + 1.4%) calc(var(--theme-l) + 58.6%);
-  --primary-200-hsl: calc(var(--theme-h) - 25) calc(var(--theme-s) + 1.1%) calc(var(--theme-l) + 55.7%);
-  --primary-230-hsl: calc(var(--theme-h) - 25) calc(var(--theme-s) + 0.4%) calc(var(--theme-l) + 52.8%);
-  --primary-260-hsl: calc(var(--theme-h) - 25) calc(var(--theme-s) + 0.1%) calc(var(--theme-l) + 49.6%);
-  --primary-300-hsl: calc(var(--theme-h) - 25) calc(var(--theme-s) + 0.1%) calc(var(--theme-l) + 45.7%);
-  --primary-330-hsl: calc(var(--theme-h) - 18.7) calc(var(--theme-s) - 0.1%) calc(var(--theme-l) + 39.8%);
-  --primary-345-hsl: calc(var(--theme-h) - 10.7) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 36.1%);
-  --primary-360-hsl: calc(var(--theme-h) - 7.9) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 33.9%);
-  --primary-400-hsl: calc(var(--theme-h) - 2.7) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 26.1%);
-  --primary-430-hsl: calc(var(--theme-h) - 8.3) calc(var(--theme-s) - 0.3%) calc(var(--theme-l) + 22.2%);
-  --primary-460-hsl: calc(var(--theme-h) - 2.4) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 19%);
-  --primary-500-hsl: calc(var(--theme-h) - 1.7) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 15.1%); */
-  --primary-530-hsl: calc(var(--theme-h) - 2.6) calc(var(--theme-s) + 0.3%) calc(var(--theme-l) + 10.6%);
-  --primary-560-hsl: calc(var(--theme-h) - 5.3) calc(var(--theme-s) + 0.2%) calc(var(--theme-l) + 5.5%);
-  --primary-630-hsl: calc(var(--theme-h) - 3.3) calc(var(--theme-s) - 0.1%) calc(var(--theme-l) + 5.3%);
-  --primary-660-hsl: calc(var(--theme-h) + 1.9) calc(var(--theme-s) + 0.1%) calc(var(--theme-l) - 8.2%);
-  --primary-700-hsl: calc(var(--theme-h) - 5.3) calc(var(--theme-s) + 0.1%) calc(var(--theme-l) - 14.3%);
-  --primary-730-hsl: calc(var(--theme-h) + 0.7) calc(var(--theme-s) + 0.7%) calc(var(--theme-l) - 15.5%);
-  --primary-760-hsl: calc(var(--theme-h) - 2.6) calc(var(--theme-s) + 0.4%) calc(var(--theme-l) - 16.8%);
-  --primary-800-hsl: calc(var(--theme-h) - 1.6) calc(var(--theme-s) - 0.6%) calc(var(--theme-l) - 19.2%);
-  --primary-830-hsl: calc(var(--theme-h) + 0.7) calc(var(--theme-s) - 1.2%) calc(var(--theme-l) - 22.7%);
-  --primary-860-hsl: calc(var(--theme-h) - 5.3) calc(var(--theme-s) + 0.8%) calc(var(--theme-l) - 26.8%);
-  --primary-900-hsl: calc(var(--theme-h) + 240) calc(var(--theme-s) + 2.0%) calc(var(--theme-l) - 31.8%);
+  --primary-530-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 10.6%);
+  --primary-560-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 5.5%);
+  --primary-630-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 5.3%);
+  --primary-660-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 8.2%);
+  --primary-700-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 14.3%);
+  --primary-730-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 15.5%);
+  --primary-760-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 16.8%);
+  --primary-800-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 19.2%);
+  --primary-830-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 22.7%);
+  --primary-860-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 26.8%);
+  --primary-900-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 31.8%);
 }
