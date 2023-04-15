@@ -1,0 +1,40 @@
+/* ----- Aligned Chatbox -----
+  Squares up chatbox with user control area */
+/* align edges of chatbox to sides */
+main[class^=chatContent] > form { padding: 0px;  }
+
+/* align chatbox to bottom */
+main[class^=chatContent] > form > *:first-child { margin-bottom: 0px; }
+
+/* center chatbox contents, no border radius */
+main[class^=chatContent] > form > *:first-child > * {
+  padding-top: 4px;
+  min-height: 49px;
+  border-radius: 0px;
+}
+
+/* slowmode/typing indicator */
+main[class^=chatContent] > form > *:last-child[class^=typing] {
+  top: -24px;
+  right: 0px;
+  margin-left: auto;
+  width: fit-content;
+  padding-left: 2px;
+  padding-right: 9px;
+  border-top-left-radius: 8px;
+  background-color: var(--channeltextarea-background);
+}
+
+/* jump to presz */
+[class^=jumpToPresentBar] {
+  left: 0;
+  border-radius: 0px;
+  border-top-right-radius: 8px;
+  opacity: 1;
+  background-color: var(--channeltextarea-background);
+  right: unset;
+}
+[class^=jumpToPresentBar] > [class^=barButtonMain] {
+  flex: 0 0 auto;
+  display: none;
+}

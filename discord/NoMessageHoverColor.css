@@ -1,8 +1,0 @@
-/* ----- No Message Hover Color -----
-  Disables background changing color when hovering a message */
-.message-2CShn3:not(.mentioned-Tre-dv):hover {
-  background-color: var(--background-primary) !important;
-}
-.mentioned-Tre-dv:hover {
-  background-color: var(--background-mentioned) !important;
-}
