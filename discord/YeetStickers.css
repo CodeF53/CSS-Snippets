@@ -24,11 +24,3 @@ button[aria-label="Open sticker picker"] { display: none; }
 [aria-label="Sticker, Wave, Wumpus waves hello"] ~ button {
   display: none;
 }
-
-/* no sticker suggestions */
-[class*="stickerIconOffset"] {
-  display: none;
-}
-[class^=channelTextArea] > [class^=container] > :is([class^=stickerResults], [class^=stickerResults] ~ div) {
-  display: none;
-}

@@ -1,0 +1,13 @@
+/* compact embeds */
+[id^=message-accessories] [class^=gridContainer] > [class^=grid] {
+  padding: 8px;
+}
+[id^=message-accessories] [class^=gridContainer] > [class^=grid] > * {
+  margin-top: 2px;
+}
+[id^=message-accessories] [class^=gridContainer] > [class^=grid] [class^=message] {
+  margin-bottom: 4px;
+}
+[id^=message-accessories] [class^=gridContainer] > [class^=grid] [class^=message] h3[class*=header] {
+  margin-top: 0px;
+}
