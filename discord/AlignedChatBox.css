@@ -25,7 +25,13 @@
   background-color: var(--channeltextarea-background);
 }
 
-/* jump to presz */
+/* Fix replies */
+main[class^=chatContent] > form > * > [class^=attachedBars] {
+  min-height: unset !important;
+  padding-bottom: 4px;
+}
+
+/* jump to present */
 [class^=jumpToPresentBar] {
   left: 0;
   border-radius: 0px;
