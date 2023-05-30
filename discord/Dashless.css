@@ -7,5 +7,5 @@
 [class^=titleWrapper] > h1, /* top bar with topic */
 [class^=resultChannel], /* channel name in search */
 [class^=placeholder][class*=slateTextArea], /* "Send a message in #blah" */
-.channelMention /* channels mentions in chat */
+.channelMention [class^=name] /* channels mentions in chat */
 { font-family: "Dashless", var(--font-primary); }
