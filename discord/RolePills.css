@@ -1,21 +1,21 @@
 /* Role pill background */
-[class*="role-"] [class*="roleCircle-"]:before,
-[class*="actionButton-"][class*="role-"][class*="justifyCenter-"] {
+[class*="role_"] [class*="roleCircle_"]:before,
+[class*="actionButton_"][class*="role_"][class*="justifyCenter_"] {
   border-radius: 3px;
 }
-[class*="role-"] {
+[class*="role_"] {
   transform: translate(0);
   border: 0;
 }
-[class*="role-"] [class*="roleRemoveIcon-"] {
+[class*="role_"] [class*="roleRemoveIcon_"] {
   margin: 0;
   left: unset;
   transform: translate(50%, -50%);
 }
-[class*="role-"] [class*="roleRemoveButton-"] {
+[class*="role_"] [class*="roleRemoveButton_"] {
   position: static;
 }
-[class*="root-"]>[class*="role-"] [class*="roleCircle-"]:before {
+[class*="root_"]>[class*="role_"] [class*="roleCircle_"]:before {
   content: '';
   top: 0;
   left: 0;
@@ -28,6 +28,6 @@
   border: 2px solid transparent;
   opacity: .4;
 }
-[class*="roles-"] {
+[class*="roles_"] {
   color: var(--text-normal);
 }

@@ -2,7 +2,7 @@
 /* Source: https://discord.com/channels/538759280057122817/755005803303403570/851578857001451570 */
 /* Updated to use generic class names */
 @media screen and (max-width: 1200px) {
-  [class^=membersWrap], /* members list */
+  [class^=container_]:has(>[class^=membersWrap]), /* members list */
   [aria-label*="Member List"] /* button to hide/show members list */
   { display: none; }
 }
