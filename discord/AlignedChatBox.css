@@ -1,46 +1,38 @@
 /* ----- Aligned Chatbox -----
   Squares up chatbox with user control area */
-/* align edges of chatbox to sides */
-:is(main,section)[class^=chatContent] > form { padding: 0px;  }
+:is(main,section)[class^=chatContent] > form {
+  /* align edges of chatbox to sides */
+  padding: 0px;
 
-/* align chatbox to bottom */
-:is(main,section)[class^=chatContent] > form > *:first-child { margin-bottom: 0px; }
+  > div[class^=channelTextArea] {
+    /* align chatbox to bottom */
+    > div { margin-bottom: 0px; }
 
-/* center chatbox contents, no border radius */
-:is(main,section)[class^=chatContent] > form > *:first-child > * {
-  padding-top: 4px;
-  min-height: 49px;
-  border-radius: 0px;
-}
+    /* center chatbox contents, no border radius */
+    > div > div {
+      padding-top: 4px;
+      min-height: 49px;
+      border-radius: 0px;
+    }
+  }
 
-/* slowmode/typing indicator */
-:is(main,section)[class^=chatContent] > form > *:last-child[class^=typing] {
-  top: -24px;
-  right: 0px;
-  margin-left: auto;
-  width: fit-content;
-  padding-left: 2px;
-  padding-right: 9px;
-  border-top-left-radius: 8px;
-  background-color: var(--channeltextarea-background);
-}
+  /* slowmode/typing indicator */
+  > div[class^=typing] {
+    top: -24px;
+    right: calc(var(--custom-index-scrollbar-margin) * 2 + var(--custom-index-scrollbar-width));
+    margin-left: auto;
+    width: fit-content;
+    padding-left: 2px;
+    padding-right: 9px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: var(--channeltextarea-background);
+  }
+  /* make scrollbar go to bottom */
+  &::after { display: none; }
 
-/* Fix replies */
-main[class^=chatContent] > form > * > [class^=attachedBars] {
-  min-height: unset !important;
-  padding-bottom: 4px;
-}
-
-/* jump to present */
-[class^=jumpToPresentBar] {
-  left: 0;
-  border-radius: 0px;
-  border-top-right-radius: 8px;
-  opacity: 1;
-  background-color: var(--channeltextarea-background);
-  right: unset;
-}
-[class^=jumpToPresentBar] > [class^=barButtonMain] {
-  flex: 0 0 auto;
-  display: none;
+  /* Fix replies */
+  > div > div > div[class^=attachedBars] {
+    min-height: unset !important;
+    padding-bottom: 4px;
+  }
 }
