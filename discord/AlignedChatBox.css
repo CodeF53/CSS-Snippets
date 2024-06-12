@@ -1,14 +1,12 @@
 /* ----- Aligned Chatbox -----
   Squares up chatbox with user control area */
-:is(main,section)[class^=chatContent] > form {
-  /* align edges of chatbox to sides */
+:is(main,section)[class^=chatContent] > form,
+form > div[class^=submitContainer] {
+  /* align chatbox */
   padding: 0px;
-
+  > div { margin-bottom: 0px; border-radius: 0px; }
   > div[class^=channelTextArea] {
-    /* align chatbox to bottom */
-    > div { margin-bottom: 0px; }
-
-    /* center chatbox contents, no border radius */
+    > div { margin: 0px;  }
     > div > div {
       padding-top: 4px;
       min-height: 49px;
@@ -16,7 +14,7 @@
     }
   }
 
-  /* slowmode/typing indicator */
+  /* move slowmode/typing indicator to match */
   > div[class^=typing] {
     top: -24px;
     right: calc(var(--custom-index-scrollbar-margin) * 2 + var(--custom-index-scrollbar-width));
@@ -27,10 +25,10 @@
     border-radius: 8px 8px 0px 0px;
     background-color: var(--channeltextarea-background);
   }
-  /* make scrollbar go to bottom */
+  /* make scrollbar meet chatbox */
   &::after { display: none; }
 
-  /* Fix replies */
+  /* fix replies */
   > div > div > div[class^=attachedBars] {
     min-height: unset !important;
     padding-bottom: 4px;
