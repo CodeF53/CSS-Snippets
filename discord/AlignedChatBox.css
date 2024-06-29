@@ -29,7 +29,7 @@ form > div[class^=submitContainer] {
   &::after { display: none; }
 
   /* fix replies */
-  > div > div > div[class^=attachedBars] {
+  > div > div > div[class^=attachedBars] > div {
     min-height: unset !important;
     padding-bottom: 4px;
   }
