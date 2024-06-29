@@ -1,10 +1,10 @@
 /* ----- Aligned Chatbox -----
   Squares up chatbox with user control area */
 :is(main,section)[class^=chatContent] > form,
-form > div[class^=submitContainer] {
+form > div {
   /* align chatbox */
   padding: 0px;
-  > div { margin-bottom: 0px; border-radius: 0px; }
+  > div > div { margin-bottom: 0px !important; border-radius: 0px; }
   > div[class^=channelTextArea] {
     > div { margin: 0px;  }
     > div > div {
