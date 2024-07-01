@@ -4,12 +4,11 @@
 form > div[class^=submitContainer] {
   /* align chatbox */
   padding: 0px;
-  > div > div > div { border-radius: 0px; }
   > div > div[class^=channelTextArea] {
-    margin: 0px;
-    > div > div {
-      padding-top: 4px;
+    margin: 0px !important;
+    > div[class^=scrollableContainer] {
       min-height: 49px;
+      padding-top: 4px;
       border-radius: 0px;
     }
   }
@@ -29,19 +28,8 @@ form > div[class^=submitContainer] {
   &::after { display: none; }
 
   /* fix replies */
-  > div > div > div[class^=attachedBars] > div {
+  > div > div > div[class^=attachedBars] {
     min-height: unset !important;
     padding-bottom: 4px;
-  }
-}
-
-/* jump to present */
-div[class^=jumpToPresentBar] {
-  left: 0; right: unset;
-  border-radius: 0px 8px 0px 0px;
-  background-color: var(--channeltextarea-background);
-  > button[class^=barButtonMain] {
-    flex: 0 0 auto;
-    display: none;
   }
 }
