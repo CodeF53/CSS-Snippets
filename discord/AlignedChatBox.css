@@ -1,3 +1,10 @@
+/**
+* @name AlignedChatBox
+* @author CodeF53
+* @version 3.0
+* @description Aligns chat box with the bottom of the screen
+*/
+
 /* ----- Aligned Chatbox -----
   Squares up chatbox with user control area */
 :is(main,section)[class^=chatContent] > form,
