@@ -12,7 +12,9 @@ form > div[class^=submitContainer] {
       border-radius: 0px;
     }
   }
-
+  /* align forum channel thing */
+  > div { margin-bottom: 0px; border-radius: 0px; }
+  
   /* move slowmode/typing indicator to match */
   > div[class^=typing] {
     top: -24px;
