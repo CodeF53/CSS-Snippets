@@ -4,12 +4,11 @@
 form > div[class^=submitContainer] {
   /* align chatbox */
   padding: 0px;
-  > div { margin-bottom: 0px; border-radius: 0px; }
-  > div[class^=channelTextArea] {
-    > div { margin: 0px;  }
-    > div > div {
-      padding-top: 4px;
+  > div > div[class^=channelTextArea] {
+    margin: 0px !important;
+    > div[class^=scrollableContainer] {
       min-height: 49px;
+      padding-top: 4px;
       border-radius: 0px;
     }
   }
