@@ -1,5 +1,9 @@
-/* ----- Bigger Channel Descriptions -----
-  allows for 2 lines of height in channel description */
+/**
+* @name BiggerChannelDesc
+* @author CodeF53
+* @version 1.0
+* @description Allows for 2 lines of height in channel description
+*/
 section[aria-label="Channel header"] div[class^=topic_] {
   white-space: normal;
   max-height: 2.4em;

@@ -1,4 +1,10 @@
-/* Replace dashes with spaces in channel names (yes this is literally just a font that renders - as space) */
+/**
+* @name Dashless
+* @author CodeF53
+* @version 1.0
+* @description Replace dashes with spaces in channel names
+*/
+/* (yes this is literally just a font that renders - as space) */
 @font-face {
   font-family: "Dashless";
   src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");

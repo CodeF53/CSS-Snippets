@@ -1,4 +1,9 @@
-/* compact embeds */
+/**
+* @name CompactEmbeds
+* @author CodeF53
+* @version 1.0
+* @description Removes unnecessary padding
+*/
 [id^=message-accessories] [class^=gridContainer] > [class^=grid] {
   padding: 8px;
 }
