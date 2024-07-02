@@ -1,6 +1,6 @@
 /* ----- Bigger Channel Descriptions -----
   allows for 2 lines of height in channel description */
-[class^=chat_] > [class^="title_"] [class^=topic_] {
+section[aria-label="Channel header"] div[class^=topic_] {
   white-space: normal;
   max-height: 2.4em;
   font-size: .9em;
