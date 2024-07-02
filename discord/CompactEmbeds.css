@@ -1,18 +1,14 @@
 /**
 * @name CompactEmbeds
 * @author CodeF53
-* @version 1.0
+* @version 1.1
 * @description Removes unnecessary padding
 */
 [id^=message-accessories] [class^=gridContainer] > [class^=grid] {
   padding: 8px;
-}
-[id^=message-accessories] [class^=gridContainer] > [class^=grid] > * {
-  margin-top: 2px;
-}
-[id^=message-accessories] [class^=gridContainer] > [class^=grid] [class^=message] {
-  margin-bottom: 4px;
-}
-[id^=message-accessories] [class^=gridContainer] > [class^=grid] [class^=message] h3[class*=header] {
-  margin-top: 0px;
+  > * { margin-top: 2px }
+  [class^=message] {
+    margin-bottom: 4px;
+    h3[class*=header] { margin-top: 0px }
+  }
 }
