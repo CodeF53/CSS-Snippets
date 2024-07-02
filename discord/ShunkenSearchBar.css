@@ -1,6 +1,9 @@
-/* ----- Shrunken Search Bar -----
-  Makes search the size of any other button until clicked
-  When clicked it smoothly expands to normal shape */
+/**
+* @name ShunkenSearchBar
+* @author CodeF53
+* @version 1.0
+* @description Makes search the size of any other button until clicked, When clicked it smoothly expands to normal shape
+*/
 [class*="toolbar_"] [class*="searchBar_"] {
   background: none;
   width: 24px;

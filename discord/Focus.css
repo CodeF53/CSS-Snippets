@@ -1,4 +1,9 @@
-/* Focus Mode */
+/**
+* @name Focus
+* @author CodeF53
+* @version 1.1
+* @description Hides Discord elements when its a custom size
+*/
 /* Source: https://discord.com/channels/538759280057122817/755005803303403570/851578857001451570 */
 /* Updated to use generic class names */
 @media screen and (max-width: 1200px) {

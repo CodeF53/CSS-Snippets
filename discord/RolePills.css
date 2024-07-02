@@ -1,4 +1,9 @@
-/* Role pill background */
+/**
+* @name RolePills
+* @author CodeF53
+* @version 1.0
+* @description Changes background color of role pill to be role color 
+*/
 [class*="role_"] [class*="roleCircle_"]:before,
 [class*="actionButton_"][class*="role_"][class*="justifyCenter_"] {
   border-radius: 3px;

@@ -1,6 +1,9 @@
-/* ----- Yeet Stickers -----
-  eradicates all instances of stickers, sticker prompts */
-
+/**
+* @name YeetStickers
+* @author CodeF53
+* @version 1.0
+* @description eradicates all instances of stickers, sticker prompts
+*/
 /* hide sticker button in chat */
 button[aria-label="Open sticker picker"] { display: none; }
 /* hide sticker picker tab in emoji menu */
