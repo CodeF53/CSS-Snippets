@@ -1,7 +1,7 @@
 /**
 * @name AlignedChatBox
 * @author CodeF53
-* @version 3.0
+* @version 3.1
 * @description Aligns chat box with the bottom of the screen and user controls
 */
 :is(main,section)[class^=chatContent] > form,
@@ -18,7 +18,7 @@ form > div[class^=submitContainer] {
   }
   /* align forum channel thing */
   > div { margin-bottom: 0px; border-radius: 0px; }
-  
+
   /* move slowmode/typing indicator to match */
   > div[class^=typing] {
     top: -24px;
@@ -49,4 +49,9 @@ div[class^=jumpToPresentBar] {
     flex: 0 0 auto;
     display: none;
   }
+}
+
+/* DUMB BUTTON THAT BREAKS EVERYTHING, JUST PRESS / IF YOU WANT TO USE AN APP YOU IDIOT */
+div[class^=channelAppLauncher] {
+  display: none;
 }
