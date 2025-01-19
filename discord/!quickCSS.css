@@ -92,3 +92,9 @@ div[class^=channelAppLauncher], /* no I don't want to launch an app, I know how 
 div[aria-label="User Badges"] > :is([aria-label^=HypeSquad], [aria-label^=Subscriber], [aria-label^="Server boosting"], [aria-label="Early Supporter"]), /* yeet stupid profile badges */
 ul[aria-label="Channels"] > div[class^=sectionDivider] /* hide section dividers */
 { display: none !important }
+
+/* hide badges on favorites tab */
+div[class^="scroller_"] > div[class^=listItem] {
+  foreignObject { mask: none; border-radius: 100%; }
+  div[class^=upperBadge] { display: none; }
+}
