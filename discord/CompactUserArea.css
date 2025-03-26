@@ -1,0 +1,34 @@
+/**
+* @name CompactUserArea
+* @author CodeF53
+* @version 1.0
+* @description makes refreshed user area more compact, works best with AlignedChatBox
+*/
+
+.whosWatching-spectators_panel {
+  display: flex;
+  flex-direction: row;
+  margin: unset;
+  > h2 {
+    text-transform: unset !important;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+section[aria-label="User area"] {
+  border: unset !important;
+  border-radius: unset !important ;
+  --space-xs: 0px;
+  > * { --space-xs: 6px }
+  div[class^=container] { border-bottom: unset; }
+}
+div[class^=rtcConnectionStatus_] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  > svg { width: 12px; height: 12px; } 
+  & * { 
+    font-size: 12px !important;
+    line-height: 12px;
+  }
+}
