@@ -1,0 +1,15 @@
+/**
+* @name Borderless
+* @author CodeF53
+* @version 1.0
+* @description removes all borders making for a sharper look
+*/
+
+.theme-midnight, .theme-dark, .theme-light {
+  --app-border-frame: transparent;
+  --border-faint: transparent;
+  --border-feedback-critical: transparent;
+  --border-normal: transparent;
+  --border-strong: transparent;
+  --border-subtle: transparent;
+}

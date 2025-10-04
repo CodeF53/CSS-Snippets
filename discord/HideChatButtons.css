@@ -1,10 +1,9 @@
 /**
 * @name HideChatButtons
 * @author CodeF53
-* @version 1.0
+* @version 1.1
 * @description Hides Useless Buttons In The Chat Box
 */
-button[aria-label="Send a gift"],
-button[aria-label="Open GIF picker"],
-button[aria-label="Open sticker picker"]
+div[aria-label="Send a gift"],
+div.expression-picker-chat-input-button:has(> div:is([aria-label="Open GIF picker"], [aria-label="Open sticker picker"]))
 { display: none; }
