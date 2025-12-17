@@ -1,7 +1,0 @@
-/* ----- Hide Chat Buttons -----
-  Hides Useless Buttons In The Chat Box */
-[aria-label="Record video clip"],
-[aria-label="Record audio clip"],
-[aria-label="Mention someone"],
-.c-wysiwyg_container__footer_divider /* Divider that looks out of place when buttons are removed */
-{ display: none; }

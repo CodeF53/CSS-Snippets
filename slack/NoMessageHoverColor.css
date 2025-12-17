@@ -1,4 +1,0 @@
-/* ----- No Message Hover Color -----
-  Disables background changing color when hovering a message */
-.c-message_kit__background--hovered { background: var(--sk_primary_background); }
-.c-message_kit__background--labels { background: rgba(var(--sk_secondary_highlight,242,199,68),.025); }

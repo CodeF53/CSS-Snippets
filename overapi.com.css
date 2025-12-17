@@ -1,9 +1,0 @@
-/* No ugly background image/color */
-.cheat-detail, body { background: black; }
-
-/* Nitpicky Front Page Tile Stuff */
-.lang-logo {
-    border-radius: 0px;
-    background-color: rgba(255, 255, 255, 0.05);
-}
-.lang-logo span { border-radius:0px; }
