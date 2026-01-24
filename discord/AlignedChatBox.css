@@ -1,13 +1,13 @@
 /**
 * @name AlignedChatBox
 * @author CodeF53
-* @version 5.1
+* @version 5.2
 * @description Aligns chat box with the bottom of the screen and user controls
 */
 
-form[class$=formWithLoadedChatInput] {
+form[class*=formWithLoadedChatInput] {
   padding: 0;
-  div[class$=channelTextArea] {
+  div[class^=channelTextArea] {
     border-radius: 0;
     --custom-chat-input-margin-bottom: 0pnx;
   }
