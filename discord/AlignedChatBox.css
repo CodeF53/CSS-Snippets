@@ -1,7 +1,7 @@
 /**
 * @name AlignedChatBox
 * @author CodeF53
-* @version 5.2
+* @version 5.3
 * @description Aligns chat box with the bottom of the screen and user controls
 */
 
@@ -12,7 +12,20 @@ form[class*=formWithLoadedChatInput] {
     --custom-chat-input-margin-bottom: 0pnx;
   }
 }
-section[aria-label="User area"] {
+div[class^=sidebar_] > section[class^=panels] {
   --custom-panels-spacing: 0px;
   &, > * { border-radius: 0; }
+}
+
+/* fix for catppuccin */
+form[class*=formWithLoadedChatInput] {
+  div[class^=channelTextArea] {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+  & > div[class^=typing_] {
+    bottom: unset !important;
+    top: -24px !important;
+    font-size: 12px !important;
+  }
 }
