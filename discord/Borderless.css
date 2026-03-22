@@ -1,18 +1,28 @@
 /**
 * @name Borderless
 * @author CodeF53
-* @version 1.1
+* @version 1.2
 * @description removes all borders making for a sharper look
 */
 
-.theme-midnight, .theme-dark, .theme-light {
-  --app-border-frame: transparent;
-  --border-faint: transparent;
-  --border-feedback-critical: transparent;
-  --border-normal: transparent;
-  --border-strong: transparent;
-  --border-subtle: transparent;
+.theme-midnight, .theme-dark, .theme-darker, .theme-light {
+  &, .visual-refresh:is(&), .visual-refresh & {
+    --app-frame-border: transparent;
+    --app-border-frame: transparent;
+    --border-faint: transparent;
+    --border-muted: transparent;
+    --border-feedback-critical: transparent;
+    --border-normal: transparent;
+    --border-strong: transparent;
+    --border-subtle: transparent;
+    --control-secondary-border-active: transparent;
+    --control-secondary-border-default: transparent;
+    --control-secondary-border-hover: transparent;
+  }
 }
 div[class^=content_] > div[class^=page_] {
   border-left: none;
+}
+div[class^=channelTextArea], [class^=sidebar_] > section[class^=panels] {
+  border: none;
 }
